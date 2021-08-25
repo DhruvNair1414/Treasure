@@ -76,7 +76,7 @@ function draw() {
       
     }else{
       if(swordGroup.isTouching(boy)) {
-        gameState===END
+        gameState=END
         boy.addAnimation("SahilRunning",endImg);
         boy.x=200;
         boy.y=200;
@@ -86,6 +86,7 @@ function draw() {
         diamondsG.setVelocityEach(0);
         jwelleryG.destroyEach();
         jwelleryG.setVelocityEach(0);
+        boy.scale = 1
         
     }
       }
